@@ -16,8 +16,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val myWebView: WebView = findViewById(R.id.webView)
         myWebView.settings.javaScriptEnabled = true
+        myWebView.settings.domStorageEnabled = true
         myWebView.webViewClient = WebViewClient()
-        myWebView.loadUrl("https://money.murph9.com")
 
         myWebView.webChromeClient = object : WebChromeClient() {
 
@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        myWebView.loadUrl("https://money.murph9.com?webview=yes")
     }
 
     override fun onBackPressed() {
