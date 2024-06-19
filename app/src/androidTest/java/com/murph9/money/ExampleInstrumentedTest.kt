@@ -1,4 +1,4 @@
-package com.murph9.moneybutdailyweb
+package com.murph9.money
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.murph9.moneybutdailyweb", appContext.packageName)
+        assertEquals("com.murph9.money", appContext.packageName)
     }
 }

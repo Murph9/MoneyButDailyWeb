@@ -1,4 +1,4 @@
-package com.murph9.moneybutdailyweb
+package com.murph9.money
 
 import org.junit.Test
 
